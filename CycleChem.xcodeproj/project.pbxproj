@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6894650DB9B81DFCA6269F0C /* Pods_CycleChem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A343CA80EC03B33594B7873C /* Pods_CycleChem.framework */; };
+		8810ADAC227794A300B050ED /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADAB227794A300B050ED /* AchievementsViewController.swift */; };
+		8810ADB2227A2C4C00B050ED /* FilterLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADB1227A2C4C00B050ED /* FilterLauncher.swift */; };
+		8810ADB4227C608000B050ED /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADB3227C608000B050ED /* FilterCell.swift */; };
+		88293910222D9078007499FC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829390F222D9078007499FC /* QuizViewController.swift */; };
+		88293912222F0EBB007499FC /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293911222F0EBA007499FC /* Score.swift */; };
+		88293914222FF8DD007499FC /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293913222FF8DD007499FC /* CustomUIButton.swift */; };
+		88293916222FFF23007499FC /* FindIntruderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293915222FFF23007499FC /* FindIntruderViewController.swift */; };
+		88293918222FFF3F007499FC /* DrawMoleculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */; };
+		8829391B2230006B007499FC /* QuickLearnCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */; };
+		8829391D22307F05007499FC /* QuickLearnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */; };
+		8829391F22313554007499FC /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391E22313554007499FC /* SliderViewController.swift */; };
+		882939632235508C007499FC /* FullListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882939622235508C007499FC /* FullListViewController.swift */; };
+		88293965223551D2007499FC /* FullListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293964223551D2007499FC /* FullListTableViewCell.swift */; };
+		885B18922289FCF8009086F5 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885B18912289FCF8009086F5 /* GameTableViewCell.swift */; };
+		885D32E821F9096200093550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D32E721F9096200093550 /* AppDelegate.swift */; };
+		885D32ED21F9096200093550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885D32EB21F9096200093550 /* Main.storyboard */; };
+		885D32EF21F9096300093550 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 885D32EE21F9096300093550 /* Assets.xcassets */; };
+		885D32F221F9096300093550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885D32F021F9096300093550 /* LaunchScreen.storyboard */; };
+		8861966922203EEC008FC2CD /* PickRightNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861966822203EEC008FC2CD /* PickRightNameViewController.swift */; };
+		886509D422905B5A00A9DF2C /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886509D322905B5A00A9DF2C /* Keys.swift */; };
+		88746153229FBE4B00D65346 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88746152229FBE4B00D65346 /* Product.swift */; };
+		88746155229FC0CF00D65346 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88746154229FC0CF00D65346 /* IAPHelper.swift */; };
+		88848F9F2260B6CA00E255F6 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88848F9E2260B6CA00E255F6 /* GamesViewController.swift */; };
+		888C600D228EC87E0047A736 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C600C228EC87E0047A736 /* Answer.swift */; };
+		88BA1C9B229AB00200F96603 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA1C9A229AB00200F96603 /* HeaderView.swift */; };
+		88C6BB6F229DD64500238508 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C6BB6E229DD64500238508 /* StoreKit.framework */; };
+		88DE9DA9221EC78A00C25D2D /* MultipleImageGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */; };
+		88E3FF26228D84E3002871BB /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3FF25228D84E3002871BB /* UserDefaults.swift */; };
+		88EA2BB72200FE780082F266 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA2BB62200FE780082F266 /* Molecule.swift */; };
+		88EA2BB92201C3480082F266 /* MoleculeBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA2BB82201C3480082F266 /* MoleculeBank.swift */; };
+		88FD57D9221C1FBA008B4F94 /* YesNoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FD57D8221C1FBA008B4F94 /* YesNoGameViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8810ADAB227794A300B050ED /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
+		8810ADB1227A2C4C00B050ED /* FilterLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLauncher.swift; sourceTree = "<group>"; };
+		8810ADB3227C608000B050ED /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		8829390F222D9078007499FC /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		88293911222F0EBA007499FC /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		88293913222FF8DD007499FC /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
+		88293915222FFF23007499FC /* FindIntruderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIntruderViewController.swift; sourceTree = "<group>"; };
+		88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawMoleculeViewController.swift; sourceTree = "<group>"; };
+		8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnCollectionViewController.swift; sourceTree = "<group>"; };
+		8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnCollectionViewCell.swift; sourceTree = "<group>"; };
+		8829391E22313554007499FC /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		882939622235508C007499FC /* FullListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListViewController.swift; sourceTree = "<group>"; };
+		88293964223551D2007499FC /* FullListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListTableViewCell.swift; sourceTree = "<group>"; };
+		885B18912289FCF8009086F5 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		885D32E421F9096200093550 /* CycleChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycleChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885D32E721F9096200093550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		885D32EC21F9096200093550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		885D32EE21F9096300093550 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		885D32F121F9096300093550 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		885D32F321F9096300093550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8861966822203EEC008FC2CD /* PickRightNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickRightNameViewController.swift; sourceTree = "<group>"; };
+		886509D322905B5A00A9DF2C /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		88746152229FBE4B00D65346 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		88746154229FC0CF00D65346 /* IAPHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		88848F9E2260B6CA00E255F6 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		888C600C228EC87E0047A736 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		88BA1C9A229AB00200F96603 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		88C6BB6E229DD64500238508 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleImageGameViewController.swift; sourceTree = "<group>"; };
+		88E3FF25228D84E3002871BB /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		88EA2BB62200FE780082F266 /* Molecule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
+		88EA2BB82201C3480082F266 /* MoleculeBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoleculeBank.swift; sourceTree = "<group>"; };
+		88FD57D8221C1FBA008B4F94 /* YesNoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoGameViewController.swift; sourceTree = "<group>"; };
+		A343CA80EC03B33594B7873C /* Pods_CycleChem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CycleChem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD2D88D60716A880C25A7BB /* Pods-CycleChem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleChem.release.xcconfig"; path = "Target Support Files/Pods-CycleChem/Pods-CycleChem.release.xcconfig"; sourceTree = "<group>"; };
+		F93A72BC10260F6F93A2285F /* Pods-CycleChem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CycleChem.debug.xcconfig"; path = "Target Support Files/Pods-CycleChem/Pods-CycleChem.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		885D32E121F9096200093550 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6894650DB9B81DFCA6269F0C /* Pods_CycleChem.framework in Frameworks */,
+				88C6BB6F229DD64500238508 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8810ADAD227794B700B050ED /* List  */ = {
+			isa = PBXGroup;
+			children = (
+				882939622235508C007499FC /* FullListViewController.swift */,
+				8810ADB1227A2C4C00B050ED /* FilterLauncher.swift */,
+			);
+			path = "List ";
+			sourceTree = "<group>";
+		};
+		8810ADAE227794C300B050ED /* QuickLearn */ = {
+			isa = PBXGroup;
+			children = (
+				8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */,
+				8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */,
+			);
+			path = QuickLearn;
+			sourceTree = "<group>";
+		};
+		8810ADB0227794DE00B050ED /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				88848F9E2260B6CA00E255F6 /* GamesViewController.swift */,
+				8810ADAB227794A300B050ED /* AchievementsViewController.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		88293919222FFF4B007499FC /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				8829391E22313554007499FC /* SliderViewController.swift */,
+				88FD57D8221C1FBA008B4F94 /* YesNoGameViewController.swift */,
+				8861966822203EEC008FC2CD /* PickRightNameViewController.swift */,
+				88293915222FFF23007499FC /* FindIntruderViewController.swift */,
+				88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */,
+				8829390F222D9078007499FC /* QuizViewController.swift */,
+				88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		885D32DB21F9096200093550 = {
+			isa = PBXGroup;
+			children = (
+				885D32E621F9096200093550 /* CycleChem */,
+				885D32E521F9096200093550 /* Products */,
+				D9A165C04A1589583D33EF05 /* Pods */,
+				C0EF76BB88DCF5F61E280D3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		885D32E521F9096200093550 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				885D32E421F9096200093550 /* CycleChem.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885D32E621F9096200093550 /* CycleChem */ = {
+			isa = PBXGroup;
+			children = (
+				88EA2BB52200FE660082F266 /* Model */,
+				88EA2BB42200FE440082F266 /* Controller */,
+				88EA2BB32200FE180082F266 /* View */,
+				885D32F021F9096300093550 /* LaunchScreen.storyboard */,
+				885D32F321F9096300093550 /* Info.plist */,
+			);
+			path = CycleChem;
+			sourceTree = "<group>";
+		};
+		88EA2BB32200FE180082F266 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				885D32EB21F9096200093550 /* Main.storyboard */,
+				885B18912289FCF8009086F5 /* GameTableViewCell.swift */,
+				88293964223551D2007499FC /* FullListTableViewCell.swift */,
+				8810ADB3227C608000B050ED /* FilterCell.swift */,
+				885D32EE21F9096300093550 /* Assets.xcassets */,
+				88293913222FF8DD007499FC /* CustomUIButton.swift */,
+				88BA1C9A229AB00200F96603 /* HeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		88EA2BB42200FE440082F266 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8810ADB0227794DE00B050ED /* Game */,
+				8810ADAE227794C300B050ED /* QuickLearn */,
+				8810ADAD227794B700B050ED /* List  */,
+				88293919222FFF4B007499FC /* Games */,
+				885D32E721F9096200093550 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		88EA2BB52200FE660082F266 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88EA2BB62200FE780082F266 /* Molecule.swift */,
+				888C600C228EC87E0047A736 /* Answer.swift */,
+				88EA2BB82201C3480082F266 /* MoleculeBank.swift */,
+				88293911222F0EBA007499FC /* Score.swift */,
+				88E3FF25228D84E3002871BB /* UserDefaults.swift */,
+				886509D322905B5A00A9DF2C /* Keys.swift */,
+				88746154229FC0CF00D65346 /* IAPHelper.swift */,
+				88746152229FBE4B00D65346 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0EF76BB88DCF5F61E280D3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C6BB6E229DD64500238508 /* StoreKit.framework */,
+				A343CA80EC03B33594B7873C /* Pods_CycleChem.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9A165C04A1589583D33EF05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F93A72BC10260F6F93A2285F /* Pods-CycleChem.debug.xcconfig */,
+				EAD2D88D60716A880C25A7BB /* Pods-CycleChem.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		885D32E321F9096200093550 /* CycleChem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885D32F621F9096300093550 /* Build configuration list for PBXNativeTarget "CycleChem" */;
+			buildPhases = (
+				7138E7971DFE9276CB23BB5A /* [CP] Check Pods Manifest.lock */,
+				885D32E021F9096200093550 /* Sources */,
+				885D32E121F9096200093550 /* Frameworks */,
+				885D32E221F9096200093550 /* Resources */,
+				1BB3EA52CE85C6B4B03B7481 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CycleChem;
+			productName = CycleChem;
+			productReference = 885D32E421F9096200093550 /* CycleChem.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		885D32DC21F9096200093550 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Eric Ordonneau";
+				TargetAttributes = {
+					885D32E321F9096200093550 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 885D32DF21F9096200093550 /* Build configuration list for PBXProject "CycleChem" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 885D32DB21F9096200093550;
+			productRefGroup = 885D32E521F9096200093550 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885D32E321F9096200093550 /* CycleChem */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		885D32E221F9096200093550 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885D32F221F9096300093550 /* LaunchScreen.storyboard in Resources */,
+				885D32EF21F9096300093550 /* Assets.xcassets in Resources */,
+				885D32ED21F9096200093550 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB3EA52CE85C6B4B03B7481 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CycleChem/Pods-CycleChem-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CycleChem/Pods-CycleChem-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CycleChem/Pods-CycleChem-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7138E7971DFE9276CB23BB5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CycleChem-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		885D32E021F9096200093550 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8810ADB2227A2C4C00B050ED /* FilterLauncher.swift in Sources */,
+				88DE9DA9221EC78A00C25D2D /* MultipleImageGameViewController.swift in Sources */,
+				88FD57D9221C1FBA008B4F94 /* YesNoGameViewController.swift in Sources */,
+				88293918222FFF3F007499FC /* DrawMoleculeViewController.swift in Sources */,
+				88E3FF26228D84E3002871BB /* UserDefaults.swift in Sources */,
+				886509D422905B5A00A9DF2C /* Keys.swift in Sources */,
+				888C600D228EC87E0047A736 /* Answer.swift in Sources */,
+				8810ADAC227794A300B050ED /* AchievementsViewController.swift in Sources */,
+				88848F9F2260B6CA00E255F6 /* GamesViewController.swift in Sources */,
+				8861966922203EEC008FC2CD /* PickRightNameViewController.swift in Sources */,
+				8829391B2230006B007499FC /* QuickLearnCollectionViewController.swift in Sources */,
+				8829391D22307F05007499FC /* QuickLearnCollectionViewCell.swift in Sources */,
+				88746155229FC0CF00D65346 /* IAPHelper.swift in Sources */,
+				8829391F22313554007499FC /* SliderViewController.swift in Sources */,
+				88293912222F0EBB007499FC /* Score.swift in Sources */,
+				8810ADB4227C608000B050ED /* FilterCell.swift in Sources */,
+				88BA1C9B229AB00200F96603 /* HeaderView.swift in Sources */,
+				88293914222FF8DD007499FC /* CustomUIButton.swift in Sources */,
+				882939632235508C007499FC /* FullListViewController.swift in Sources */,
+				88293965223551D2007499FC /* FullListTableViewCell.swift in Sources */,
+				88EA2BB72200FE780082F266 /* Molecule.swift in Sources */,
+				88746153229FBE4B00D65346 /* Product.swift in Sources */,
+				88293916222FFF23007499FC /* FindIntruderViewController.swift in Sources */,
+				88293910222D9078007499FC /* QuizViewController.swift in Sources */,
+				885D32E821F9096200093550 /* AppDelegate.swift in Sources */,
+				88EA2BB92201C3480082F266 /* MoleculeBank.swift in Sources */,
+				885B18922289FCF8009086F5 /* GameTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		885D32EB21F9096200093550 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885D32EC21F9096200093550 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		885D32F021F9096300093550 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885D32F121F9096300093550 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		885D32F421F9096300093550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		885D32F521F9096300093550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885D32F721F9096300093550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F93A72BC10260F6F93A2285F /* Pods-CycleChem.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNB5G735SM;
+				INFOPLIST_FILE = CycleChem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EricOrdonneau.CycleChem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		885D32F821F9096300093550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAD2D88D60716A880C25A7BB /* Pods-CycleChem.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DNB5G735SM;
+				INFOPLIST_FILE = CycleChem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.EricOrdonneau.CycleChem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		885D32DF21F9096200093550 /* Build configuration list for PBXProject "CycleChem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885D32F421F9096300093550 /* Debug */,
+				885D32F521F9096300093550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885D32F621F9096300093550 /* Build configuration list for PBXNativeTarget "CycleChem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885D32F721F9096300093550 /* Debug */,
+				885D32F821F9096300093550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 885D32DC21F9096200093550 /* Project object */;
+}
