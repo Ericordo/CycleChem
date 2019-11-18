@@ -963,6 +963,7 @@
                                     <segment title="Hide Molecule"/>
                                 </segments>
                                 <color key="tintColor" red="0.28235294117647058" green="0.62352941176470589" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedSegmentTintColor" red="0.41902451351373904" green="0.63457277861240979" blue="0.96620899438858032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="didChangeLearningType:" destination="AwC-ZG-BAa" eventType="valueChanged" id="WnD-fM-85E"/>
                                 </connections>
@@ -1274,7 +1275,7 @@
                                     <constraint firstAttribute="width" secondItem="anF-mN-FVF" secondAttribute="height" multiplier="207:28" id="Qzd-IQ-FhW"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="barTintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
