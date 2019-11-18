@@ -34,6 +34,8 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var heightCorrectAnswerLabel: NSLayoutConstraint!
     @IBOutlet weak var heightEvaluationImageView: NSLayoutConstraint!
     
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
+    
     
     let moleculeList = MoleculeBank()
     var pickerArray = [Molecule]()
@@ -59,14 +61,14 @@ class QuizViewController: UIViewController {
         let settingsButton = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(settingsButtonTapped))
         settingsButton.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = settingsButton
-        
+
         if self.view.frame.height < 600 {
             heightNextButton.constant = 25
             heightSubmitButton.constant = 25
             heightNamePicker.constant = 90
             heightCorrectAnswerLabel.constant = 30
             heightEvaluationImageView.constant = 44
-            
+
         }
     
     }
@@ -101,6 +103,7 @@ class QuizViewController: UIViewController {
     }
     
     func updateGame() {
+           updateProgressBar()
         submitButton.isEnabled = true
         nextButton.isHidden = true
         namePicker.isUserInteractionEnabled = true
@@ -130,18 +133,18 @@ class QuizViewController: UIViewController {
         saturationLabel.text = pickerArray[randomMoleculeNumber].isSaturated ? "The molecule is saturated" : "The molecule is unsaturated"
         correctMolecule = pickerArray[randomMoleculeNumber]
        namePicker.selectRow(0, inComponent: 0, animated: true)
-        
+
         currentScoreLabel.text = "Score: \(scoreSystem.currentScore)"
         updateBestScoreLabel()
         evaluationImageView.alpha = 0
         correctAnswerLabel.alpha = 0
-        updateProgressBar()
-        
+     
+
         if currentQuestion == scoreSystem.maxScore {
             nextButton.setTitle("RESTART", for: .normal)
             gameOver = true
         }
-        
+
         
     }
         
@@ -211,9 +214,10 @@ class QuizViewController: UIViewController {
     
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
         })
     }
     

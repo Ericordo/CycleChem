@@ -64,6 +64,9 @@ class MultipleImageGameViewController: UIViewController {
     @IBOutlet weak var bestScoreLabel: UILabel!
     @IBOutlet weak var evaluationImageView: UIImageView!
     
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
+    
+    
     override func viewWillLayoutSubviews() {
         for button in buttonArray {
             
@@ -157,9 +160,10 @@ class MultipleImageGameViewController: UIViewController {
     
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
         })
     }
     

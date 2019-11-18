@@ -33,6 +33,9 @@ class FindIntruderViewController: UIViewController {
     @IBOutlet weak var label4: UILabel!
     @IBOutlet weak var label5: UILabel!
     
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
+    
+    
     
     var scoreSystem = Score()
     var moleculeList = MoleculeBank()
@@ -143,9 +146,10 @@ class FindIntruderViewController: UIViewController {
     
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
         })
     }
     

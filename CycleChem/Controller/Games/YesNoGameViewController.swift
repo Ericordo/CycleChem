@@ -29,6 +29,7 @@ class YesNoGameViewController: UIViewController {
     @IBOutlet weak var spaceBetweenLabelandImage: NSLayoutConstraint!
     @IBOutlet weak var spaceBetweenLabelandMolecule: NSLayoutConstraint!
     
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
     
     var randomNumberImage: Int?
     var randomNumberName1: Int?
@@ -47,12 +48,11 @@ class YesNoGameViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = "Yes or No?"
         updateGame()
-        
-        
+
         let settingsButton = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(settingsButtonTapped))
         settingsButton.tintColor = UIColor.black
         navigationItem.rightBarButtonItem = settingsButton
-        
+
         if self.view.frame.height < 600 {
             widthNoButton.constant = 110
             widthYesButton.constant = 110
@@ -91,6 +91,7 @@ class YesNoGameViewController: UIViewController {
     }
     
     func updateGame() {
+  
         createNumbersForGame()
         let randomNumberToSelectName = Int.random(in: 0...2)
         selectedNumberForName = arrayToPickFrom[randomNumberToSelectName]
@@ -100,26 +101,29 @@ class YesNoGameViewController: UIViewController {
         moleculeNameLabel.text = moleculeList.list[selectedNumberForName].moleculeName
         currentScoreLabel.text = "Score: \(scoreSystem.currentScore)"
         updateBestScoreLabel()
-        updateProgressBar()
+        
         evaluationImageView.alpha = 0
         yesButton.isEnabled = true
         noButton.isEnabled = true
         nextButton.isHidden = true
-        
+
+        updateProgressBar()
         if currentQuestion == scoreSystem.maxScore {
             nextButton.setTitle("RESTART", for: .normal)
             gameOver = true
         }
+        
     }
     
 
-        
+    
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
-})
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
+        })
     }
     
     func restartGame() {

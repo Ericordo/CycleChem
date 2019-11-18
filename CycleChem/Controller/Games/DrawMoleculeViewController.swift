@@ -28,7 +28,8 @@ class DrawMoleculeViewController: UIViewController {
     @IBOutlet weak var selectedMoleculeImageView: UIImageView!
     @IBOutlet weak var correctAnswerView: UIView!
     
-
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
+    
     
     let propertySwitch = UISwitch()
     
@@ -56,12 +57,6 @@ class DrawMoleculeViewController: UIViewController {
         gameArray.append(randomNumber)
         gameTableView.delegate = self
         gameTableView.dataSource = self
-        if self.view.frame.height > 890 {
-            gameTableView.isScrollEnabled = false
-        } else {
-            gameTableView.isScrollEnabled = true
-        }
-        
         gameTableView.tableFooterView = UIView(frame: CGRect.zero)
         gameTableView.separatorStyle = .none
         
@@ -149,9 +144,10 @@ class DrawMoleculeViewController: UIViewController {
     
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
         })
     }
     

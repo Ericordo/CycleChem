@@ -41,6 +41,9 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     @IBOutlet weak var heightSubmitButton: NSLayoutConstraint!
     @IBOutlet weak var heightNextButton: NSLayoutConstraint!
     
+    @IBOutlet weak var progressBarTrailing: NSLayoutConstraint!
+    
+    
     
     var randomNumberImage = 0
     let moleculeList = MoleculeBank()
@@ -56,9 +59,10 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Find the correct name"
+        updateGame()
         moleculeNamePicker.delegate = self
         moleculeNamePicker.dataSource = self
-        updateGame()
+        
         
         let settingsButton = UIBarButtonItem(image: UIImage(named: "settings"), style: .plain, target: self, action: #selector(settingsButtonTapped))
         settingsButton.tintColor = UIColor.black
@@ -100,6 +104,7 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     }
     
     func updateGame() {
+        updateProgressBar()
         submitButton.isEnabled = true
         nextButton.isHidden = true
         setPickerArray()
@@ -120,7 +125,7 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
         updateBestScoreLabel()
         evaluationImageView.alpha = 0
         correctAnswerLabel.alpha = 0
-        updateProgressBar()
+        
         
         if currentQuestion == scoreSystem.maxScore {
             nextButton.setTitle("RESTART", for: .normal)
@@ -240,9 +245,10 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     
     func updateProgressBar() {
         currentQuestionLabel.text = "\(currentQuestion)"+"/"+"\(scoreSystem.maxScore)"
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 0.5, animations: {
-            self.progressBar.frame.size.width = (self.view.frame.width/CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion)
+            self.progressBarTrailing.constant = self.view.frame.width - (self.view.frame.width/(CGFloat(self.scoreSystem.maxScore)) * CGFloat(self.currentQuestion))
+            self.view.layoutIfNeeded()
         })
     }
 
