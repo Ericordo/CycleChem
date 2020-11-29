@@ -24,7 +24,7 @@ class MultipleImageGameViewController: UIViewController {
     
     @IBAction func moleculeButtonPressed(_ sender: UIButton) {
         let generator = UINotificationFeedbackGenerator()
-        if moleculeNameLabel.text == imageArray[sender.tag].moleculeName {
+        if moleculeNameLabel.text == imageArray[sender.tag].name {
             generator.notificationOccurred(.success)
             evaluationImageView.image = UIImage(named: "correctanswer")
             scoreSystem.updateCurrentScore()
@@ -138,11 +138,11 @@ class MultipleImageGameViewController: UIViewController {
             button.layer.borderColor = UIColor.black.cgColor
         }
         let randomNumberForLabel = Int.random(in: 0..<numberArray.count)
-        moleculeNameLabel.text = imageArray[randomNumberForLabel].moleculeName
+        moleculeNameLabel.text = imageArray[randomNumberForLabel].name
         
         correctMolecule = imageArray[randomNumberForLabel]
         let indexOfCorrectMolecule = moleculeList.list.firstIndex {
-            $0.moleculeName == correctMolecule!.moleculeName
+            $0.name == correctMolecule!.name
             }!
         gameArray.append(indexOfCorrectMolecule)
   

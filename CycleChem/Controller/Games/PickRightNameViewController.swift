@@ -22,7 +22,7 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
 
 
-        return pickerArray[row].moleculeName
+        return pickerArray[row].name
     }
     
     @IBOutlet weak var moleculeImage: UIImageView!
@@ -114,7 +114,7 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
         moleculeImage.image = pickerArray[randomNumberImage].image
         let correctMolecule = pickerArray[randomNumberImage]
         let indexOfCorrectMolecule = moleculeList.list.firstIndex {
-            $0.moleculeName == correctMolecule.moleculeName
+            $0.name == correctMolecule.name
             }!
         gameArray.append(indexOfCorrectMolecule)
         
@@ -186,9 +186,9 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
     func checkAnswer() {
         submitButton.isEnabled = false
         let index = moleculeNamePicker.selectedRow(inComponent: 0)
-        let selectedName = pickerArray[index].moleculeName
+        let selectedName = pickerArray[index].name
         let generator = UINotificationFeedbackGenerator()
-        if selectedName == pickerArray[randomNumberImage].moleculeName {
+        if selectedName == pickerArray[randomNumberImage].name {
             generator.notificationOccurred(.success)
             correctAnswer = true
             evaluationImageView.image = UIImage(named: "correctanswer")
@@ -199,7 +199,7 @@ class PickRightNameViewController: UIViewController, UIPickerViewDelegate, UIPic
             generator.notificationOccurred(.error)
             correctAnswer = false
 
-            correctAnswerLabel.text = "Correct answer : \(pickerArray[randomNumberImage].moleculeName)"
+            correctAnswerLabel.text = "Correct answer : \(pickerArray[randomNumberImage].name)"
             evaluationImageView.image = UIImage(named: "wronganswer")
         }
         animateEvaluation()

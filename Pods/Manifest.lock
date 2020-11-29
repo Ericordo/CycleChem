@@ -28,23 +28,37 @@ PODS:
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - ReactiveCocoa (10.3.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.5.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
+  - ReactiveCocoa (~> 10.1)
+  - ReactiveSwift (~> 6.1)
+  - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+  trunk:
+    - ReactiveCocoa
+    - ReactiveSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 1e72b4f438d997ab0f2ee62b3a7b0cbcc87c47cb
   GoogleAppMeasurement: 51d8d9ea48f0ca44484d29cfbdef976fbd4fc336
   GoogleUtilities: 84df567c76ca84f67b7bb40e769fdd4acc746a10
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
+  ReactiveSwift: 8d159904084e908856cde90b2e28823f3c7e485f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 0c22da609faca37f9a2d3515304563a47243f4d6
+PODFILE CHECKSUM: f1a590c1bee2c49d1d98ac064f6e6a5e6123bf8a
 
-COCOAPODS: 1.7.0.rc.2
+COCOAPODS: 1.9.3

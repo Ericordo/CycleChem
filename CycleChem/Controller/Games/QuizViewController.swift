@@ -168,7 +168,7 @@ class QuizViewController: UIViewController {
         
                 for molecule in pickerArray {
                     if molecule.nitrogenCount == correctMolecule?.nitrogenCount && molecule.oxygenCount == correctMolecule?.oxygenCount && molecule.sulfurCount == correctMolecule?.sulfurCount && molecule.isSaturated == correctMolecule?.isSaturated && (molecule.ringCount == correctMolecule?.ringCount || molecule.ringSize == correctMolecule?.ringSize) {
-                        possibleAnswers.append(molecule.moleculeName)
+                        possibleAnswers.append(molecule.name)
                     }
                 }
                 correctAnswerLabel.text = "Correct answer: "
@@ -312,7 +312,7 @@ extension QuizViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return pickerArray[row].moleculeName
+        return pickerArray[row].name
     }
     
     

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class Molecule {
-    let moleculeName: String
+    let name: String
     let ringSize: Int
     let ringCount: Int
     let hasOxygen: Bool
@@ -22,8 +22,8 @@ class Molecule {
     let isSaturated: Bool
     let image : UIImage
     
-    init(moleculeName : String, ringSize : Int, ringCount : Int, hasOxygen : Bool, oxygenCount : Int, hasNitrogen : Bool, nitrogenCount : Int, hasSulfur : Bool, sulfurCount : Int, isSaturated : Bool, image: UIImage) {
-        self.moleculeName = moleculeName
+    init(name : String, ringSize : Int, ringCount : Int, hasOxygen : Bool, oxygenCount : Int, hasNitrogen : Bool, nitrogenCount : Int, hasSulfur : Bool, sulfurCount : Int, isSaturated : Bool, image: UIImage) {
+        self.name = name
         self.ringSize = ringSize
         self.ringCount = ringCount
         self.hasOxygen = hasOxygen

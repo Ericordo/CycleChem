@@ -114,7 +114,7 @@ class FindIntruderViewController: UIViewController {
             button.layer.borderColor = UIColor.black.cgColor
         }
         for label in labelArray {
-            label.text = moleculeArray[labelArray.firstIndex(of: label)!].moleculeName
+            label.text = moleculeArray[labelArray.firstIndex(of: label)!].name
         }
         
         let randomNumberForLabel = Int.random(in: 0..<numberArray.count)
@@ -127,7 +127,7 @@ class FindIntruderViewController: UIViewController {
             }
         }
         selectedMoleculeForIntruderImage = moleculeList.list[randomNumberArrayForIntruderMolecule[0]]
-        selectedLabelForIntruder.text = selectedMoleculeForIntruderImage!.moleculeName
+        selectedLabelForIntruder.text = selectedMoleculeForIntruderImage!.name
         currentScoreLabel.text = "Score: \(scoreSystem.currentScore)"
         updateBestScoreLabel()
         evaluationImageView.alpha = 0
@@ -242,7 +242,7 @@ class FindIntruderViewController: UIViewController {
     
     @IBAction func moleculeButtonPressed(_ sender: UIButton) {
         let generator = UINotificationFeedbackGenerator()
-        if labelArray[sender.tag].text != moleculeArray[sender.tag].moleculeName {
+        if labelArray[sender.tag].text != moleculeArray[sender.tag].name {
             generator.notificationOccurred(.success)
             evaluationImageView.image = UIImage(named: "correctanswer")
             scoreSystem.updateCurrentScore()
@@ -253,7 +253,7 @@ class FindIntruderViewController: UIViewController {
             evaluationImageView.image = UIImage(named: "wronganswer")
             UIView.animate(withDuration: 0.5, animations: { sender.layer.borderColor = UIColor(red: 211/255, green: 145/255, blue: 143/255, alpha: 1.0).cgColor })
             for label in labelArray {
-                if label.text == selectedMoleculeForIntruderImage?.moleculeName {
+                if label.text == selectedMoleculeForIntruderImage?.name {
                     labelTag = label.tag
                 }
             }

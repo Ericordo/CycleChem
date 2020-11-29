@@ -11,16 +11,21 @@
 		8810ADAC227794A300B050ED /* AchievementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADAB227794A300B050ED /* AchievementsViewController.swift */; };
 		8810ADB2227A2C4C00B050ED /* FilterLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADB1227A2C4C00B050ED /* FilterLauncher.swift */; };
 		8810ADB4227C608000B050ED /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8810ADB3227C608000B050ED /* FilterCell.swift */; };
+		8824F7032561C09900557383 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8824F7022561C09900557383 /* UIViewController+Ext.swift */; };
 		88293910222D9078007499FC /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829390F222D9078007499FC /* QuizViewController.swift */; };
 		88293912222F0EBB007499FC /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293911222F0EBA007499FC /* Score.swift */; };
 		88293914222FF8DD007499FC /* CustomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293913222FF8DD007499FC /* CustomUIButton.swift */; };
 		88293916222FFF23007499FC /* FindIntruderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293915222FFF23007499FC /* FindIntruderViewController.swift */; };
 		88293918222FFF3F007499FC /* DrawMoleculeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */; };
-		8829391B2230006B007499FC /* QuickLearnCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */; };
-		8829391D22307F05007499FC /* QuickLearnCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */; };
+		8829391B2230006B007499FC /* QuickLearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391A2230006B007499FC /* QuickLearnViewController.swift */; };
+		8829391D22307F05007499FC /* QuickLearnCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391C22307F05007499FC /* QuickLearnCVCell.swift */; };
 		8829391F22313554007499FC /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8829391E22313554007499FC /* SliderViewController.swift */; };
 		882939632235508C007499FC /* FullListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882939622235508C007499FC /* FullListViewController.swift */; };
-		88293965223551D2007499FC /* FullListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293964223551D2007499FC /* FullListTableViewCell.swift */; };
+		88293965223551D2007499FC /* FullListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88293964223551D2007499FC /* FullListCell.swift */; };
+		883DB9A625608BC400C06B89 /* UIView+SoftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DB9A525608BC400C06B89 /* UIView+SoftUI.swift */; };
+		883DB9AB25611D0B00C06B89 /* UIButton+SoftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DB9AA25611D0B00C06B89 /* UIButton+SoftUI.swift */; };
+		883DB9AE256120AC00C06B89 /* LearningType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883DB9AD256120AC00C06B89 /* LearningType.swift */; };
+		883F2F3E2560824D00510EDA /* CCFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883F2F3D2560824D00510EDA /* CCFlowLayout.swift */; };
 		885B18922289FCF8009086F5 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885B18912289FCF8009086F5 /* GameTableViewCell.swift */; };
 		885D32E821F9096200093550 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885D32E721F9096200093550 /* AppDelegate.swift */; };
 		885D32ED21F9096200093550 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885D32EB21F9096200093550 /* Main.storyboard */; };
@@ -34,6 +39,17 @@
 		888C600D228EC87E0047A736 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 888C600C228EC87E0047A736 /* Answer.swift */; };
 		88BA1C9B229AB00200F96603 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88BA1C9A229AB00200F96603 /* HeaderView.swift */; };
 		88C6BB6F229DD64500238508 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C6BB6E229DD64500238508 /* StoreKit.framework */; };
+		88D6A4472561D55500BDDA8D /* NeumorphismTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A4462561D55500BDDA8D /* NeumorphismTabBar.swift */; };
+		88D6A44A2561D56B00BDDA8D /* NeumorphismTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A4492561D56B00BDDA8D /* NeumorphismTabBarController.swift */; };
+		88D6A44D2561D57100BDDA8D /* NeumorphismTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A44C2561D57100BDDA8D /* NeumorphismTabBarItem.swift */; };
+		88D6A4502561D57C00BDDA8D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A44F2561D57C00BDDA8D /* UIView+Constraints.swift */; };
+		88D6A4532561D58200BDDA8D /* UIView+Neumorphism.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A4522561D58200BDDA8D /* UIView+Neumorphism.swift */; };
+		88D6A4562562EED400BDDA8D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A4552562EED400BDDA8D /* GameViewController.swift */; };
+		88D6A45A2563D53F00BDDA8D /* NewYesNoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A4592563D53F00BDDA8D /* NewYesNoGameViewController.swift */; };
+		88D6A45D2563D76A00BDDA8D /* YesNoGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D6A45C2563D76A00BDDA8D /* YesNoGameViewModel.swift */; };
+		88D7D7122560580D00068FEE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D7112560580D00068FEE /* Constants.swift */; };
+		88D7D71525605A0C00068FEE /* CCTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D71425605A0C00068FEE /* CCTabBarController.swift */; };
+		88D7D71B2560737900068FEE /* QuickLearnViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D7D71A2560737900068FEE /* QuickLearnViewModel.swift */; };
 		88DE9DA9221EC78A00C25D2D /* MultipleImageGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */; };
 		88E3FF26228D84E3002871BB /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3FF25228D84E3002871BB /* UserDefaults.swift */; };
 		88EA2BB72200FE780082F266 /* Molecule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA2BB62200FE780082F266 /* Molecule.swift */; };
@@ -45,16 +61,21 @@
 		8810ADAB227794A300B050ED /* AchievementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsViewController.swift; sourceTree = "<group>"; };
 		8810ADB1227A2C4C00B050ED /* FilterLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLauncher.swift; sourceTree = "<group>"; };
 		8810ADB3227C608000B050ED /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		8824F7022561C09900557383 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		8829390F222D9078007499FC /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		88293911222F0EBA007499FC /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		88293913222FF8DD007499FC /* CustomUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUIButton.swift; sourceTree = "<group>"; };
 		88293915222FFF23007499FC /* FindIntruderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindIntruderViewController.swift; sourceTree = "<group>"; };
 		88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawMoleculeViewController.swift; sourceTree = "<group>"; };
-		8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnCollectionViewController.swift; sourceTree = "<group>"; };
-		8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnCollectionViewCell.swift; sourceTree = "<group>"; };
+		8829391A2230006B007499FC /* QuickLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnViewController.swift; sourceTree = "<group>"; };
+		8829391C22307F05007499FC /* QuickLearnCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnCVCell.swift; sourceTree = "<group>"; };
 		8829391E22313554007499FC /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		882939622235508C007499FC /* FullListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListViewController.swift; sourceTree = "<group>"; };
-		88293964223551D2007499FC /* FullListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListTableViewCell.swift; sourceTree = "<group>"; };
+		88293964223551D2007499FC /* FullListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullListCell.swift; sourceTree = "<group>"; };
+		883DB9A525608BC400C06B89 /* UIView+SoftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SoftUI.swift"; sourceTree = "<group>"; };
+		883DB9AA25611D0B00C06B89 /* UIButton+SoftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SoftUI.swift"; sourceTree = "<group>"; };
+		883DB9AD256120AC00C06B89 /* LearningType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningType.swift; sourceTree = "<group>"; };
+		883F2F3D2560824D00510EDA /* CCFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFlowLayout.swift; sourceTree = "<group>"; };
 		885B18912289FCF8009086F5 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		885D32E421F9096200093550 /* CycleChem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CycleChem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885D32E721F9096200093550 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +91,17 @@
 		888C600C228EC87E0047A736 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		88BA1C9A229AB00200F96603 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		88C6BB6E229DD64500238508 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		88D6A4462561D55500BDDA8D /* NeumorphismTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphismTabBar.swift; sourceTree = "<group>"; };
+		88D6A4492561D56B00BDDA8D /* NeumorphismTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphismTabBarController.swift; sourceTree = "<group>"; };
+		88D6A44C2561D57100BDDA8D /* NeumorphismTabBarItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeumorphismTabBarItem.swift; sourceTree = "<group>"; };
+		88D6A44F2561D57C00BDDA8D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		88D6A4522561D58200BDDA8D /* UIView+Neumorphism.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Neumorphism.swift"; sourceTree = "<group>"; };
+		88D6A4552562EED400BDDA8D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		88D6A4592563D53F00BDDA8D /* NewYesNoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewYesNoGameViewController.swift; sourceTree = "<group>"; };
+		88D6A45C2563D76A00BDDA8D /* YesNoGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoGameViewModel.swift; sourceTree = "<group>"; };
+		88D7D7112560580D00068FEE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		88D7D71425605A0C00068FEE /* CCTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCTabBarController.swift; sourceTree = "<group>"; };
+		88D7D71A2560737900068FEE /* QuickLearnViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickLearnViewModel.swift; sourceTree = "<group>"; };
 		88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleImageGameViewController.swift; sourceTree = "<group>"; };
 		88E3FF25228D84E3002871BB /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		88EA2BB62200FE780082F266 /* Molecule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Molecule.swift; sourceTree = "<group>"; };
@@ -105,8 +137,8 @@
 		8810ADAE227794C300B050ED /* QuickLearn */ = {
 			isa = PBXGroup;
 			children = (
-				8829391A2230006B007499FC /* QuickLearnCollectionViewController.swift */,
-				8829391C22307F05007499FC /* QuickLearnCollectionViewCell.swift */,
+				8829391A2230006B007499FC /* QuickLearnViewController.swift */,
+				88D7D71A2560737900068FEE /* QuickLearnViewModel.swift */,
 			);
 			path = QuickLearn;
 			sourceTree = "<group>";
@@ -130,8 +162,20 @@
 				88DE9DA8221EC78A00C25D2D /* MultipleImageGameViewController.swift */,
 				8829390F222D9078007499FC /* QuizViewController.swift */,
 				88293917222FFF3F007499FC /* DrawMoleculeViewController.swift */,
+				88D6A4552562EED400BDDA8D /* GameViewController.swift */,
+				88D6A4592563D53F00BDDA8D /* NewYesNoGameViewController.swift */,
+				88D6A45C2563D76A00BDDA8D /* YesNoGameViewModel.swift */,
 			);
 			path = Games;
+			sourceTree = "<group>";
+		};
+		883DB9A425608BB300C06B89 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				88D6A4412561D4B000BDDA8D /* Neumorphic */,
+				8824F7022561C09900557383 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		885D32DB21F9096200093550 = {
@@ -158,22 +202,79 @@
 				88EA2BB52200FE660082F266 /* Model */,
 				88EA2BB42200FE440082F266 /* Controller */,
 				88EA2BB32200FE180082F266 /* View */,
+				883DB9A425608BB300C06B89 /* Extensions */,
 				885D32F021F9096300093550 /* LaunchScreen.storyboard */,
 				885D32F321F9096300093550 /* Info.plist */,
 			);
 			path = CycleChem;
 			sourceTree = "<group>";
 		};
+		88D6A4412561D4B000BDDA8D /* Neumorphic */ = {
+			isa = PBXGroup;
+			children = (
+				88D6A4442561D4C300BDDA8D /* UITabBar */,
+				88D6A4432561D4BC00BDDA8D /* UIButton */,
+				88D6A4422561D4B800BDDA8D /* UIView */,
+			);
+			path = Neumorphic;
+			sourceTree = "<group>";
+		};
+		88D6A4422561D4B800BDDA8D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				883DB9A525608BC400C06B89 /* UIView+SoftUI.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		88D6A4432561D4BC00BDDA8D /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				883DB9AA25611D0B00C06B89 /* UIButton+SoftUI.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		88D6A4442561D4C300BDDA8D /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				88D6A4462561D55500BDDA8D /* NeumorphismTabBar.swift */,
+				88D6A4492561D56B00BDDA8D /* NeumorphismTabBarController.swift */,
+				88D6A44C2561D57100BDDA8D /* NeumorphismTabBarItem.swift */,
+				88D6A44F2561D57C00BDDA8D /* UIView+Constraints.swift */,
+				88D6A4522561D58200BDDA8D /* UIView+Neumorphism.swift */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		88D7D72A25607AA100068FEE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8829391C22307F05007499FC /* QuickLearnCVCell.swift */,
+				885B18912289FCF8009086F5 /* GameTableViewCell.swift */,
+				88293964223551D2007499FC /* FullListCell.swift */,
+				8810ADB3227C608000B050ED /* FilterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		88D7D72B25607AC500068FEE /* Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				88BA1C9A229AB00200F96603 /* HeaderView.swift */,
+				88293913222FF8DD007499FC /* CustomUIButton.swift */,
+				883F2F3D2560824D00510EDA /* CCFlowLayout.swift */,
+			);
+			path = Subclasses;
+			sourceTree = "<group>";
+		};
 		88EA2BB32200FE180082F266 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				88D7D72B25607AC500068FEE /* Subclasses */,
+				88D7D72A25607AA100068FEE /* Cells */,
 				885D32EB21F9096200093550 /* Main.storyboard */,
-				885B18912289FCF8009086F5 /* GameTableViewCell.swift */,
-				88293964223551D2007499FC /* FullListTableViewCell.swift */,
-				8810ADB3227C608000B050ED /* FilterCell.swift */,
 				885D32EE21F9096300093550 /* Assets.xcassets */,
-				88293913222FF8DD007499FC /* CustomUIButton.swift */,
-				88BA1C9A229AB00200F96603 /* HeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +287,7 @@
 				8810ADAD227794B700B050ED /* List  */,
 				88293919222FFF4B007499FC /* Games */,
 				885D32E721F9096200093550 /* AppDelegate.swift */,
+				88D7D71425605A0C00068FEE /* CCTabBarController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +303,8 @@
 				886509D322905B5A00A9DF2C /* Keys.swift */,
 				88746154229FC0CF00D65346 /* IAPHelper.swift */,
 				88746152229FBE4B00D65346 /* Product.swift */,
+				88D7D7112560580D00068FEE /* Constants.swift */,
+				883DB9AD256120AC00C06B89 /* LearningType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -344,32 +448,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				883F2F3E2560824D00510EDA /* CCFlowLayout.swift in Sources */,
 				8810ADB2227A2C4C00B050ED /* FilterLauncher.swift in Sources */,
+				8824F7032561C09900557383 /* UIViewController+Ext.swift in Sources */,
+				88D6A4502561D57C00BDDA8D /* UIView+Constraints.swift in Sources */,
 				88DE9DA9221EC78A00C25D2D /* MultipleImageGameViewController.swift in Sources */,
 				88FD57D9221C1FBA008B4F94 /* YesNoGameViewController.swift in Sources */,
 				88293918222FFF3F007499FC /* DrawMoleculeViewController.swift in Sources */,
 				88E3FF26228D84E3002871BB /* UserDefaults.swift in Sources */,
+				88D6A45D2563D76A00BDDA8D /* YesNoGameViewModel.swift in Sources */,
+				883DB9AB25611D0B00C06B89 /* UIButton+SoftUI.swift in Sources */,
+				883DB9AE256120AC00C06B89 /* LearningType.swift in Sources */,
 				886509D422905B5A00A9DF2C /* Keys.swift in Sources */,
 				888C600D228EC87E0047A736 /* Answer.swift in Sources */,
 				8810ADAC227794A300B050ED /* AchievementsViewController.swift in Sources */,
 				88848F9F2260B6CA00E255F6 /* GamesViewController.swift in Sources */,
+				88D6A4472561D55500BDDA8D /* NeumorphismTabBar.swift in Sources */,
 				8861966922203EEC008FC2CD /* PickRightNameViewController.swift in Sources */,
-				8829391B2230006B007499FC /* QuickLearnCollectionViewController.swift in Sources */,
-				8829391D22307F05007499FC /* QuickLearnCollectionViewCell.swift in Sources */,
+				88D6A45A2563D53F00BDDA8D /* NewYesNoGameViewController.swift in Sources */,
+				8829391B2230006B007499FC /* QuickLearnViewController.swift in Sources */,
+				883DB9A625608BC400C06B89 /* UIView+SoftUI.swift in Sources */,
+				88D7D7122560580D00068FEE /* Constants.swift in Sources */,
+				88D6A44D2561D57100BDDA8D /* NeumorphismTabBarItem.swift in Sources */,
+				8829391D22307F05007499FC /* QuickLearnCVCell.swift in Sources */,
 				88746155229FC0CF00D65346 /* IAPHelper.swift in Sources */,
 				8829391F22313554007499FC /* SliderViewController.swift in Sources */,
+				88D6A4562562EED400BDDA8D /* GameViewController.swift in Sources */,
+				88D7D71525605A0C00068FEE /* CCTabBarController.swift in Sources */,
+				88D6A44A2561D56B00BDDA8D /* NeumorphismTabBarController.swift in Sources */,
 				88293912222F0EBB007499FC /* Score.swift in Sources */,
 				8810ADB4227C608000B050ED /* FilterCell.swift in Sources */,
 				88BA1C9B229AB00200F96603 /* HeaderView.swift in Sources */,
 				88293914222FF8DD007499FC /* CustomUIButton.swift in Sources */,
 				882939632235508C007499FC /* FullListViewController.swift in Sources */,
-				88293965223551D2007499FC /* FullListTableViewCell.swift in Sources */,
+				88D7D71B2560737900068FEE /* QuickLearnViewModel.swift in Sources */,
+				88293965223551D2007499FC /* FullListCell.swift in Sources */,
 				88EA2BB72200FE780082F266 /* Molecule.swift in Sources */,
 				88746153229FBE4B00D65346 /* Product.swift in Sources */,
 				88293916222FFF23007499FC /* FindIntruderViewController.swift in Sources */,
 				88293910222D9078007499FC /* QuizViewController.swift in Sources */,
 				885D32E821F9096200093550 /* AppDelegate.swift in Sources */,
 				88EA2BB92201C3480082F266 /* MoleculeBank.swift in Sources */,
+				88D6A4532561D58200BDDA8D /* UIView+Neumorphism.swift in Sources */,
 				885B18922289FCF8009086F5 /* GameTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,7 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -502,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -521,7 +641,7 @@
 				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = DNB5G735SM;
 				INFOPLIST_FILE = CycleChem/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -530,7 +650,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.EricOrdonneau.CycleChem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -543,7 +663,7 @@
 				CURRENT_PROJECT_VERSION = 1.5;
 				DEVELOPMENT_TEAM = DNB5G735SM;
 				INFOPLIST_FILE = CycleChem/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,7 +672,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.EricOrdonneau.CycleChem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

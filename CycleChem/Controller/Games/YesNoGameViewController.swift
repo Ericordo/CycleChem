@@ -98,7 +98,7 @@ class YesNoGameViewController: UIViewController {
         if let randomNumberImage = randomNumberImage {
             moleculeImage.image = moleculeList.list[randomNumberImage].image
         }
-        moleculeNameLabel.text = moleculeList.list[selectedNumberForName].moleculeName
+        moleculeNameLabel.text = moleculeList.list[selectedNumberForName].name
         currentScoreLabel.text = "Score: \(scoreSystem.currentScore)"
         updateBestScoreLabel()
         

@@ -106,7 +106,7 @@ class DrawMoleculeViewController: UIViewController {
         selectedMoleculeImage = selectedMolecule.image
         let selectedMoleculeRingBool = selectedMolecule.ringSize == 0 ? false : true
         answerToGive = Answer(hasNitrogen: selectedMolecule.hasNitrogen, hasOxygen: selectedMolecule.hasOxygen, hasSulfur: selectedMolecule.hasSulfur, nitrogenCount: selectedMolecule.nitrogenCount, oxygenCount: selectedMolecule.oxygenCount, sulfurCount: selectedMolecule.sulfurCount, hasOnlyOneRing: selectedMoleculeRingBool, ringSize: selectedMolecule.ringSize, ringCount: selectedMolecule.ringCount, isSaturated: selectedMolecule.isSaturated)
-        moleculeNameLabel.text = selectedMolecule.moleculeName
+        moleculeNameLabel.text = selectedMolecule.name
         currentScoreLabel.text = "Score: \(scoreSystem.currentScore)"
         updateBestScoreLabel()
         evaluationImageView.alpha = 0

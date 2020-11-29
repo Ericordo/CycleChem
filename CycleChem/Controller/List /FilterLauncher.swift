@@ -148,7 +148,7 @@ class FilterLauncher: NSObject, UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func filter() -> [Molecule] {
-        let originalList = MoleculeBank().list.sorted(by: { $0.moleculeName < $1.moleculeName} )
+        let originalList = MoleculeBank().list.sorted(by: { $0.name < $1.name} )
         var filterResultsRingSize3 : [Molecule] = []
         var filterResultsRingSize4 : [Molecule] = []
         var filterResultsRingSize5 : [Molecule] = []
@@ -197,7 +197,7 @@ class FilterLauncher: NSObject, UICollectionViewDelegate, UICollectionViewDataSo
         let rawFilterResults = filterResultsRingSize3 + filterResultsRingSize4 + filterResultsRingSize5 + filterResultsRingSize6 + filterResultsRingSize0 + filterResultsOxygen + filterResultsNitrogen + filterResultsSulfur + filterResultsSaturated + filterResultsUnsaturated
         
         var counts : [String : Int] = [:]
-        rawFilterResults.forEach { counts[$0.moleculeName, default: 0] += 1 }
+        rawFilterResults.forEach { counts[$0.name, default: 0] += 1 }
         print(counts)
         var finalFilterResultsString : [String] = []
         
@@ -208,14 +208,14 @@ class FilterLauncher: NSObject, UICollectionViewDelegate, UICollectionViewDataSo
         }
         for molecule in originalList {
             for name in finalFilterResultsString {
-                if molecule.moleculeName == name {
-                    if !finalFilterResults.contains(where: {$0.moleculeName == name}) {
+                if molecule.name == name {
+                    if !finalFilterResults.contains(where: {$0.name == name}) {
                     finalFilterResults.append(molecule)
                     }
                 }
             }
         }
-        finalFilterResults = finalFilterResults.sorted(by: { $0.moleculeName < $1.moleculeName} )
+        finalFilterResults = finalFilterResults.sorted(by: { $0.name < $1.name} )
         if criteriaCount == 0 {
             return originalList
         } else {

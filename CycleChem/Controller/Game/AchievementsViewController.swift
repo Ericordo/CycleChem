@@ -59,34 +59,7 @@ class AchievementsViewController: UIViewController {
 
 
     }
-    
-    
-    
 
-//    func updateRewards() {
-//        let fullImageArray = [gameOneReward20, gameOneReward30, gameOneReward40, gameOneReward50, gameTwoReward20, gameTwoReward30, gameTwoReward40, gameTwoReward50, gameThreeReward20, gameThreeReward30, gameThreeReward40, gameThreeReward50, gameFourReward20, gameFourReward30, gameFourReward40, gameFourReward50, gameFiveReward20, gameFiveReward30, gameFiveReward40, gameFiveReward50, gameSixReward20, gameSixReward30, gameSixReward40, gameSixReward50]
-//        let fullKeyArray = [keys.gameOneBestScoreFor20, keys.gameOneBestScoreFor30, keys.gameOneBestScoreFor40, keys.gameOneBestScoreFor50, keys.gameTwoBestScoreFor20, keys.gameTwoBestScoreFor30, keys.gameTwoBestScoreFor40, keys.gameTwoBestScoreFor50, keys.gameThreeBestScoreFor20, keys.gameThreeBestScoreFor30, keys.gameThreeBestScoreFor40, keys.gameThreeBestScoreFor50, keys.gameFourBestScoreFor20, keys.gameFourBestScoreFor30, keys.gameFourBestScoreFor40, keys.gameFourBestScoreFor50, keys.gameFiveBestScoreFor20, keys.gameFiveBestScoreFor30, keys.gameFiveBestScoreFor40, keys.gameFiveBestScoreFor50, keys.gameSixBestScoreFor20, keys.gameSixBestScoreFor30, keys.gameSixBestScoreFor40, keys.gameSixBestScoreFor50]
-//        let bestScoresArray = [20, 30, 40, 50]
-//        for i in 0...fullImageArray.count-1 {
-//            for score in bestScoresArray {
-//                if defaults.integer(forKey: fullKeyArray[i]) == score {
-//                    switch score {
-//                    case 20:
-//                        fullImageArray[i]?.image = UIImage(named: "reward20")
-//                    case 30:
-//                        fullImageArray[i]?.image = UIImage(named: "reward30")
-//                    case 40:
-//                        fullImageArray[i]?.image = UIImage(named: "reward40")
-//                    case 50:
-//                        fullImageArray[i]?.image = UIImage(named: "reward50")
-//                    default:
-//                        break
-//                    }
-//                }
-//            }
-//        }
-//    }
-    
     
     func updateRewards20() {
         let imageArray20 = [gameOneReward20, gameTwoReward20, gameThreeReward20, gameFourReward20, gameFiveReward20, gameSixReward20]
